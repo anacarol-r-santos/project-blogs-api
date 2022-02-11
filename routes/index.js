@@ -2,9 +2,14 @@ const express = require('express');
 
 const router = express.Router();
 
-const { create, getAll, findEmail } = require('../controllers/users');
+const { createUser } = require('../controllers');
 
-router.post('/user', findEmail, create);
-router.get('/user', getAll);
+// const { loginUser } = require('../controllers/users/login');
+
+// const { validatePasswordToLogin, validateEmailToLogin } = require('../services');
+
+router.post('/user', createUser);
+// router.get('/user', getAll);
+// router.post('/login', validateEmailToLogin, validatePasswordToLogin, loginUser);
 
 module.exports = { router };

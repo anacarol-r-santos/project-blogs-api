@@ -1,8 +1,8 @@
 const { schema } = require('./validateUser');
 
-const { User } = require('../../models');
+const { User } = require('../../../models');
 
-const { createToken } = require('../../controllers/users/auth');
+const { createToken } = require('../../../controllers/auth');
 
 const createUserService = async ({ displayName, email, password, image }) => {
     const { error } = schema.validate(

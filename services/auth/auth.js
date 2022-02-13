@@ -11,9 +11,9 @@ const createToken = (user) => {
     return token;   
 };
 
-// const validateToken = (user) => {
-//     const token = jwt.verify(user, process.env.JWT_SECRET, jwtConfig);
-//     return token;   
-// };
+const verifyToken = (token) => {
+    const isToken = jwt.verify(token, process.env.JWT_SECRET);
+    return isToken;   
+};
 
-module.exports = { createToken };
+module.exports = { createToken, verifyToken };

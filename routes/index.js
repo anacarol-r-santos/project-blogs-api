@@ -2,12 +2,14 @@ const express = require('express');
 
 const router = express.Router();
 
-const { createUser, loginUser, getAllUser, getUserById } = require('../controllers');
+const controllers = require('../controllers');
+
 const { authService } = require('../services/auth/validToken');
 
-router.post('/user', createUser);
-router.get('/user', authService, getAllUser);
-router.get('/user/:id', authService, getUserById);
-router.post('/login', loginUser);
+router.post('/user', controllers.createUser);
+router.get('/user', authService, controllers.getAllUser);
+router.get('/user/:id', authService, controllers.getUserById);
+router.post('/login', controllers.loginUser);
+router.post('/categories', authService, controllers.createCategorie);
 
 module.exports = { router };

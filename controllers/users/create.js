@@ -1,4 +1,3 @@
-require('dotenv').config();
 const { createUserService } = require('../../services');
 
 const createUser = async (req, res) => {

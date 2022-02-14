@@ -9,7 +9,12 @@ const authService = (req, res, next) => {
         }
         const user = verifyToken(authorization);
 
+        // if (!user) {
+        //     return res.status(401).json({ message: 'Expired or invalid token' });
+        // }
+
         req.user = user;
+        console.log(user);
 
         next();
     } catch (error) {

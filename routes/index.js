@@ -13,5 +13,6 @@ router.post('/login', controllers.loginUser);
 router.post('/categories', authService, controllers.createCategorie);
 router.get('/categories', authService, controllers.getAllCategorie);
 router.post('/post', authService, controllers.createPost);
+router.get('/post', authService, controllers.getAllPost);
 
 module.exports = { router };

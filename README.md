@@ -1,3 +1,5 @@
+## Projeto Blogs Api
+
 ### Descrição
 O objetivo deste projeto é desenvolver uma API de um CRUD posts de blog, criando alguns endpoints (seguindo os princípios do REST) que estarão conectados ao banco de dados.
 
@@ -71,7 +73,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
   _O token anterior é fictício_
 
 
-- [ ] 2: Sua aplicação deve ter o endpoint POST `/login`
+- [x] 2: Sua aplicação deve ter o endpoint POST `/login`
 
 - O corpo da requisição deverá seguir o formato abaixo:
 
@@ -94,7 +96,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
   _O token anterior é fictício_
 
 
-- [ ] 3: Sua aplicação deve ter o endpoint GET `/user`
+- [x] 3: Sua aplicação deve ter o endpoint GET `/user`
 
 - Deve listar todos os **Users** e retorná-los na seguinte estrutura:
 
@@ -112,7 +114,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 - A requisição deve ter token de autenticação nos headers e, caso contrário, retorne um código de `status 401`.
 
 
-- [ ] 4: Sua aplicação deve ter o endpoint GET `/user/:id`
+- [x] 4: Sua aplicação deve ter o endpoint GET `/user/:id`
 
 - Retorna os detalhes do usuário baseado no `id` da rota. Os dados devem ter o seguinte formato:
 
@@ -128,7 +130,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 - A requisição deve ter token de autenticação nos headers e, caso contrário, retorne um código de `status 401`.
 
 
-- [ ] 5: Sua aplicação deve ter o endpoint POST `/categories`
+- [x] 5: Sua aplicação deve ter o endpoint POST `/categories`
 
 - Esse endpoint deve receber uma _Categoria_ no corpo da requisição e criá-la no banco. O corpo da requisição deve ter a seguinte estrutura:
 
@@ -143,7 +145,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 - A requisição deve ter o token de autenticação nos headers e, caso contrário, retorne um código de `status 401`.
 
 
-- [ ] 6: Sua aplicação deve ter o endpoint GET `/categories`
+- [x] 6: Sua aplicação deve ter o endpoint GET `/categories`
 
 - Esse endpoint deve listar todas as Categorias e retorná-las na seguinte estrutura:
 
@@ -160,7 +162,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 ]
 ```
 
-- [ ] 7: Sua aplicação deve ter o endpoint POST `/post`
+- [x] 7: Sua aplicação deve ter o endpoint POST `/post`
 
 - Esse endpoint deve receber um _BlogPost_ no corpo da requisição e criá-lo no banco. O corpo da requisição deve ter a seguinte estrutura:
 
@@ -177,7 +179,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 - A requisição deve ter o token de autenticação nos headers e, caso contrário, retorne um código de `status 401`.
 
 
-- [ ] 8: Sua aplicação deve ter o endpoint GET `/post`
+- [x] 8: Sua aplicação deve ter o endpoint GET `/post`
 
 - Esse endpoint deve listar todos os _BlogPosts_ e retorná-los na seguinte estrutura:
 

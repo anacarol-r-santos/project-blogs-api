@@ -33,7 +33,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 
 ## Lista de Requisitos:
 
-- [] 1: Sua aplicação deve ter o endpoint POST `/user`
+- [x] 1: Sua aplicação deve ter o endpoint POST `/user`
 
 - O endpoint deve ser capaz de adicionar um novo user a sua tabela no banco de dados;
 
@@ -71,7 +71,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
   _O token anterior é fictício_
 
 
-- [] 2: Sua aplicação deve ter o endpoint POST `/login`
+- [ ] 2: Sua aplicação deve ter o endpoint POST `/login`
 
 - O corpo da requisição deverá seguir o formato abaixo:
 
@@ -94,7 +94,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
   _O token anterior é fictício_
 
 
-- [] 3: Sua aplicação deve ter o endpoint GET `/user`
+- [ ] 3: Sua aplicação deve ter o endpoint GET `/user`
 
 - Deve listar todos os **Users** e retorná-los na seguinte estrutura:
 
@@ -112,7 +112,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 - A requisição deve ter token de autenticação nos headers e, caso contrário, retorne um código de `status 401`.
 
 
-- [] 4: Sua aplicação deve ter o endpoint GET `/user/:id`
+- [ ] 4: Sua aplicação deve ter o endpoint GET `/user/:id`
 
 - Retorna os detalhes do usuário baseado no `id` da rota. Os dados devem ter o seguinte formato:
 
@@ -128,7 +128,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 - A requisição deve ter token de autenticação nos headers e, caso contrário, retorne um código de `status 401`.
 
 
-- [] 5: Sua aplicação deve ter o endpoint POST `/categories`
+- [ ] 5: Sua aplicação deve ter o endpoint POST `/categories`
 
 - Esse endpoint deve receber uma _Categoria_ no corpo da requisição e criá-la no banco. O corpo da requisição deve ter a seguinte estrutura:
 
@@ -143,7 +143,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 - A requisição deve ter o token de autenticação nos headers e, caso contrário, retorne um código de `status 401`.
 
 
-- [] 6: Sua aplicação deve ter o endpoint GET `/categories`
+- [ ] 6: Sua aplicação deve ter o endpoint GET `/categories`
 
 - Esse endpoint deve listar todas as Categorias e retorná-las na seguinte estrutura:
 
@@ -160,7 +160,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 ]
 ```
 
-- [] 7: Sua aplicação deve ter o endpoint POST `/post`
+- [ ] 7: Sua aplicação deve ter o endpoint POST `/post`
 
 - Esse endpoint deve receber um _BlogPost_ no corpo da requisição e criá-lo no banco. O corpo da requisição deve ter a seguinte estrutura:
 
@@ -177,7 +177,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 - A requisição deve ter o token de autenticação nos headers e, caso contrário, retorne um código de `status 401`.
 
 
-- [] 8: Sua aplicação deve ter o endpoint GET `/post`
+- [ ] 8: Sua aplicação deve ter o endpoint GET `/post`
 
 - Esse endpoint deve listar todos os _BlogPosts_ e retorná-los na seguinte estrutura:
 
@@ -206,7 +206,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 ]
 ```
 
-- [] 9: Sua aplicação deve ter o endpoint GET `post/:id`
+- [ ] 9: Sua aplicação deve ter o endpoint GET `post/:id`
 
 - Retorna um **BlogPost** com o `id` especificado. O retorno deve ter os seguinte formato:
 
@@ -233,7 +233,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 }
 ```
 
-- [] 10: Sua aplicação deve ter o endpoint PUT `/post/:id`
+- [ ] 10: Sua aplicação deve ter o endpoint PUT `/post/:id`
 
 - O endpoint deve receber um **BlogPost** que irá sobrescrever o original com o `id` especificado na URL. Só deve ser permitido para o usuário que criou o **BlogPost**.
 
@@ -255,7 +255,7 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 - Caso o post não contenha o `title` e/ou o `content` a API deve retornar um erro de `status 400`.
 
 
-- [] 11: Sua aplicação deve ter o endpoint DELETE `post/:id`
+- [ ] 11: Sua aplicação deve ter o endpoint DELETE `post/:id`
 
 
 - Deleta o post com o `id` especificado. Só deve ser permitido para o usuário que criou o **BlogPost**.
@@ -267,14 +267,14 @@ Primeiro foi criada uma tabela para os usuários que desejam se cadastrar na apl
 - Caso o post referido não exista, deve-se retornar um código de `status 404`.
 
 
-- []  12: Sua aplicação deve ter o endpoint DELETE `/user/me`
+- [ ]  12: Sua aplicação deve ter o endpoint DELETE `/user/me`
 
 
 - Utilizando o token de autenticação nos headers, o usuário correspondente deve ser apagado.
 
 
 
-- [] 13: Sua aplicação deve ter o endpoint GET `post/search?q=:searchTerm`
+- [ ] 13: Sua aplicação deve ter o endpoint GET `post/search?q=:searchTerm`
 
 
 - Retorna uma array de **BlogPosts** que contenham em seu título, ou conteúdo, o termo pesquisado no `queryParam` da URL. O retorno deve ter o seguinte formato:
